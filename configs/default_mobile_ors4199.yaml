@@ -1,0 +1,10 @@
+__base__:
+  - configs/default_mobile.yaml
+
+# ors4199 训练：仅覆盖数据集路径，模型结构/损失/优化器完全继承 default_mobile.yaml
+train_dataset:
+  params:
+    image_root: './ORSI_dataset_aug/train_dataset/ors4199/train/image/'
+    gt_root: './ORSI_dataset_aug/train_dataset/ors4199/train/GT/'
+    edge_root: './ORSI_dataset_aug/train_dataset/ors4199/train/Edge/'
+    skeleton_root: './ORSI_dataset_aug/train_dataset/ors4199/train/Skeleton/'

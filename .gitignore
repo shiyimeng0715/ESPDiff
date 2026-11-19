@@ -1,0 +1,50 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+.conda/
+
+# ===== Jupyter =====
+.ipynb_checkpoints/
+
+# ===== IDEs / editors =====
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# ===== Checkpoints / model weights (large binaries, downloaded per README) =====
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.engine
+
+# ===== Datasets (large, download & augment per README) =====
+ORSI_dataset/
+ORSI_dataset_aug/
+
+# ===== Generated results / saliency maps (old ablation outputs, not published) =====
+results_t5_seed0/
+
+# ===== Logs & generated eval outputs =====
+*.log
+eval_all_t5.json
+wandb/
+
+# ===== Paper draft (unpublished manuscript) =====
+paper/
+
+# ===== Local tooling =====
+.claude/
